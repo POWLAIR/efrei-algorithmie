@@ -1,0 +1,27 @@
+{
+  "sujet": "rapport",
+  "jeu": "mois",
+  "tailles": [
+    100000,
+    1000000,
+    3000000
+  ],
+  "variantes": [
+    "tri",
+    "tas",
+    "quickselect"
+  ],
+  "repetitions": 5,
+  "echauffement": 2,
+  "chauffe_max_ms": 5000,
+  "statistique": "médiane",
+  "machine": {
+    "processeur": "Intel(R) Core(TM) Ultra 7 155H",
+    "coeurs": 8,
+    "memoire_go": 10,
+    "systeme": "Linux 6.18.58.1-microsoft-standard-WSL2",
+    "node": "v20.20.2"
+  },
+  "date": "2026-11-10T13:29:11.186Z",
+  "csv": "bench/resultats/2026-11-10T13-29-11-rapport.csv"
+}
