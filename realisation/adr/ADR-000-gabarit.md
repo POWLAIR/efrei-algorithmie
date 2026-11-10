@@ -1,0 +1,49 @@
+# ADR-000 - Titre de la décision (une ligne, à l'infinitif : "Retrouver un colis par son numéro de suivi")
+
+Une page. Six rubriques, dans cet ordre. Copiez ce fichier en `ADR-00N.md` et remplacez chaque bloc.
+
+## 1. Contexte
+
+Le ticket du jour, les volumes, la contrainte qui compte. Trois à cinq lignes.
+
+Exemple : la page "Où est mon colis" cherche un numéro de suivi parmi les 13 millions de scans gardés six mois en base, 70 000 de plus par jour (pièce 06). Elle est appelée 40 000 fois par jour. La contrainte est le temps de réponse par requête, pas le temps de construction.
+
+## 2. Options comparées
+
+Deux au moins dans le carnet, la version naïve du legacy comprise ; en atelier, les trois options de la fiche (le correcteur les compte). Une ligne par option, avec la complexité annoncée.
+
+- Option A (legacy) : ce que fait le code actuel. Complexité annoncée : O(...).
+- Option B : ... Complexité annoncée : O(...).
+- Option C : ... Complexité annoncée : O(...).
+
+## 3. Mesures
+
+Le protocole en cinq lignes, puis le tableau, puis la courbe.
+
+- Machine : processeur, mémoire, système, version de Node.
+- Jeux : quel fichier, quelles tailles (les trois échelles au moins).
+- Répétitions et échauffement : combien.
+- Statistique retenue : la médiane.
+- Ce qui est mesuré : temps par appel, mémoire et ce que la production paiera si ce n'est pas le temps de votre poste (requêtes à la base, appels d'API, `npm run couples`).
+
+| Option | 1 000 | 10 000 | 100 000 | Mémoire |
+| --- | --- | --- | --- | --- |
+| A | ... ms | ... ms | ... ms | ... Mo |
+| B | ... ms | ... ms | ... ms | ... Mo |
+| C | ... ms | ... ms | ... ms | ... Mo |
+
+Courbe : `bench/resultats/<horodatage>-<sujet>.svg` (générée par `npm run courbe -- <csv> --log`).
+
+## 4. Décision
+
+Une phrase : l'option retenue et le critère qui a tranché.
+
+## 5. Conséquences et limites
+
+Ce que la décision coûte (mémoire, code, dépendance), ce qui n'a pas été mesuré. Trois à cinq lignes.
+
+Domaine de validité : les paramètres que vous avez fait varier et leurs valeurs (volume, livreurs, hubs, doublons), ceux que vous n'avez pas fait varier, et à partir de quel volume la décision ne tient plus. Une à trois lignes, avec un nombre.
+
+## 6. En trois phrases pour la directrice des opérations
+
+La même décision, sans un seul terme technique. Elle doit pouvoir la répéter à un livreur.
