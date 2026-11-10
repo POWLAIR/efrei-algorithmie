@@ -1,0 +1,28 @@
+{
+  "sujet": "affectation",
+  "jeu": "moyenne",
+  "tailles": [
+    1000,
+    2000,
+    5000,
+    10000
+  ],
+  "variantes": [
+    "naive",
+    "tri",
+    "map"
+  ],
+  "repetitions": 5,
+  "echauffement": 200,
+  "chauffe_max_ms": 5000,
+  "statistique": "médiane",
+  "machine": {
+    "processeur": "Intel(R) Core(TM) Ultra 7 155H",
+    "coeurs": 8,
+    "memoire_go": 10,
+    "systeme": "Linux 6.18.54.1-microsoft-standard-WSL2",
+    "node": "v20.20.2"
+  },
+  "date": "2026-11-09T15:16:33.331Z",
+  "csv": "bench/resultats/2026-11-09T15-16-33-affectation.csv"
+}
