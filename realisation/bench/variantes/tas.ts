@@ -33,13 +33,26 @@ export class TasBinaire<T> {
   private remonter(i: number): void {
     // À COMPLÉTER (1/2) : tant que i n'est pas le sommet et que t[i] passe avant son parent,
     // échanger t[i] avec son parent, puis continuer depuis la case du parent.
-    void i;
+    while (i > 0) {
+      const parent = (i - 1) >> 1;
+      if (this.avant(this.t[i], this.t[parent]) >= 0) break;
+      this.echanger(i, parent);
+      i = parent;
+    }
   }
 
   // Fait descendre l'élément de la case i tant qu'un de ses enfants doit passer avant lui.
   private descendre(i: number): void {
     // À COMPLÉTER (2/2) : tant que i a au moins un enfant, choisir celui des deux enfants qui passe
     // en premier ; s'il passe avant t[i], les échanger et continuer depuis sa case, sinon s'arrêter.
-    void i;
+    for (;;) {
+      const gauche = 2 * i + 1;
+      if (gauche >= this.t.length) break;
+      const droite = gauche + 1;
+      const meilleurEnfant = droite < this.t.length && this.avant(this.t[droite], this.t[gauche]) < 0 ? droite : gauche;
+      if (this.avant(this.t[meilleurEnfant], this.t[i]) >= 0) break;
+      this.echanger(i, meilleurEnfant);
+      i = meilleurEnfant;
+    }
   }
 }

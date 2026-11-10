@@ -1,0 +1,26 @@
+{
+  "sujet": "priorite-arrivees",
+  "jeu": "grande",
+  "tailles": [
+    1000,
+    9000
+  ],
+  "variantes": [
+    "tableau",
+    "tas",
+    "seaux"
+  ],
+  "repetitions": 3,
+  "echauffement": 0,
+  "chauffe_max_ms": 5000,
+  "statistique": "médiane",
+  "machine": {
+    "processeur": "Intel(R) Core(TM) Ultra 7 155H",
+    "coeurs": 8,
+    "memoire_go": 10,
+    "systeme": "Linux 6.18.58.1-microsoft-standard-WSL2",
+    "node": "v20.20.2"
+  },
+  "date": "2026-11-10T13:26:45.722Z",
+  "csv": "bench/resultats/2026-11-10T13-26-45-priorite-arrivees.csv"
+}
