@@ -1,0 +1,9 @@
+node_modules
+data/jeux/*/
+data/referentiel/*.csv
+data/referentiel/*.csv.gz
+bench/resultats/*
+docs
+.claude
+.cursor
+*.log

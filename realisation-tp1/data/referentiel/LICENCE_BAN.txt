@@ -1,0 +1,4 @@
+Base Adresse Nationale, departement de la Gironde.
+Source : https://adresse.data.gouv.fr/data/ban/adresses/latest/csv/adresses-33.csv.gz
+Licence Ouverte / Open Licence 2.0 (Etalab).
+Preparation le 2026-10-01 : 732668 adresses en Gironde, 229273 dans Bordeaux Metropole.

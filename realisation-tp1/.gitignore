@@ -1,0 +1,9 @@
+node_modules/
+data/jeux/*/
+!data/jeux/.gitkeep
+data/referentiel/adresses-33.csv.gz
+data/referentiel/adresses-gironde.csv
+data/referentiel/adresses-metropole.csv
+bench/resultats/*
+!bench/resultats/.gitkeep
+*.log
