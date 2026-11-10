@@ -32,7 +32,10 @@ export function construireMap(scans: Scan[]): Map<string, Scan> {
   // À COMPLÉTER : pour chaque scan, ranger dans l'index le scan le plus récent de son numéro de suivi.
   // Un numéro absent de l'index y entre ; un numéro déjà présent n'est remplacé que si le nouveau scan
   // est plus récent (la fonction plusRecent(a, b) de legacy/src/suivi.ts le dit).
-  void plusRecent;
+  for (const scan of scans) {
+    const deja = index.get(scan.numeroSuivi);
+    if (!deja || plusRecent(scan, deja)) index.set(scan.numeroSuivi, scan);
+  }
   return index;
 }
 export const map: VarianteSuivi = {
