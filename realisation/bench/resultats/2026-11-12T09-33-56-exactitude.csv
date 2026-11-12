@@ -1,0 +1,4 @@
+variante;requetes;justes;taux;ms_par_requete;construction_ms;index_mo;exacte;accents;abreviation;faute;double;sans_numero;commune
+brute;10;10;1.000;4588.18;0;0.0;6/6;2/2;2/2;0/0;0/0;0/0;0/0
+trigrammes;300;288;0.960;13.37;1475;58.8;198/198;32/32;29/29;21/24;4/4;0/9;4/4
+postgres;300;288;0.960;187.41;6349;42.1;198/198;32/32;29/29;21/24;4/4;0/9;4/4
