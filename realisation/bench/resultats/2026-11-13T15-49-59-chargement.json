@@ -1,0 +1,27 @@
+{
+  "sujet": "chargement",
+  "jeu": "moyenne",
+  "tailles": [
+    1,
+    5,
+    20
+  ],
+  "variantes": [
+    "glouton",
+    "dynamique",
+    "backtracking"
+  ],
+  "repetitions": 3,
+  "echauffement": 1,
+  "chauffe_max_ms": 5000,
+  "statistique": "médiane",
+  "machine": {
+    "processeur": "Intel(R) Core(TM) Ultra 7 155H",
+    "coeurs": 8,
+    "memoire_go": 10,
+    "systeme": "Linux 6.18.58.1-microsoft-standard-WSL2",
+    "node": "v20.20.2"
+  },
+  "date": "2026-11-13T15:49:59.527Z",
+  "csv": "bench/resultats/2026-11-13T15-49-59-chargement.csv"
+}
